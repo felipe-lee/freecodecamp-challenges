@@ -1,0 +1,47 @@
+// https://learn.freecodecamp.org/coding-interview-prep/algorithms/inventory-update/
+
+function updateInventory(arr1, arr2) {
+    // All inventory must be accounted for or you're fired!
+    let currentInventory = new Object;
+    for (let i = 0; i < arr1.length; i++) {
+        currentInventory[arr1[i][1]] = arr1[i][0];
+    }
+
+    for (let i = 0; i < arr2.length; i++) {
+        if (currentInventory.hasOwnProperty(arr2[i][1])) {
+            currentInventory[arr2[i][1]] += arr2[i][0];
+        } else {
+            currentInventory[arr2[i][1]] = arr2[i][0];
+        }
+    }
+
+    arr1 = Object.keys(currentInventory).map(k => [currentInventory[k], k]);
+    arr1 = arr1.sort((a, b) => {
+        if (a[1] < b[1]) {
+            return -1;
+        } else if (a[1] > b[1]) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+
+    return arr1;
+}
+
+// Example inventory lists
+var curInv = [
+    [21, "Bowling Ball"],
+    [2, "Dirty Sock"],
+    [1, "Hair Pin"],
+    [5, "Microphone"]
+];
+
+var newInv = [
+    [2, "Hair Pin"],
+    [3, "Half-Eaten Apple"],
+    [67, "Bowling Ball"],
+    [7, "Toothpaste"]
+];
+
+updateInventory(curInv, newInv);
