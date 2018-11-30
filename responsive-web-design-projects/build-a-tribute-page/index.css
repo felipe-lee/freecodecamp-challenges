@@ -1,0 +1,52 @@
+/* http://paletton.com/#uid=63j0v0kllllaFw0g0qFqFg0w0aF */
+
+body {
+  background: linear-gradient(35deg, #AA6D39, #236467);
+}
+
+h1, h2 {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 5px;
+  text-align: center;
+}
+
+p, li {
+  font-family: 'Libre Baskerville', serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+.time-card {
+/*   display: flex; */
+  margin: auto;
+  height: auto;
+  width: 30vw;
+  background-color: #2D882D;
+  padding: 3px 5px;
+  border-radius: 0;
+  margin-bottom: 5px;
+}
