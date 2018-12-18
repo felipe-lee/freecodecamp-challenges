@@ -1,11 +1,17 @@
 /* http://paletton.com/#uid=63j0v0kllllaFw0g0qFqFg0w0aF */
 
 body {
+  background: #003133;
   background: linear-gradient(35deg, #AA6D39, #236467);
+  color: #ffffff;
+}
+
+a {
+  color: blue;
 }
 
 h1, h2 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Righteous', sans-serif;
   text-align: center;
 }
 
@@ -41,11 +47,12 @@ img {
 }
 
 .time-card {
-  /*   display: flex; */
+  /*display: flex; */
+  box-shadow: 5px 5px 20px rgba(22, 39, 86, 0.3);
   height: auto;
   width: 30vw;
-  background-color: #2D882D;
+  background-color: #162756;
   padding: 3px 5px;
   border-radius: 0;
-  margin: auto auto 5px;
+  margin: auto auto 10px;
 }
