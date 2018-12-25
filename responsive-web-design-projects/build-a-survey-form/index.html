@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Survey form page" name="Description"/>
+  <title>Survey Form</title>
+</head>
+<body>
+<main id="main">
+  <section>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Form to survey people!</p>
+    </header>
+
+    <form id="form">
+      <label for="name" id="name-label">Name:</label>
+      <input id="name" placeholder="Write your name here" required type="text">
+
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" placeholder="Input your email here" required type="email">
+
+      <label for="number" id="number-label">Number:</label>
+      <input id="number" max="99" min="1" placeholder="Input a number here" type="number">
+
+      <label for="dropdown" id="dropdown-label">Things</label>
+      <select id="dropdown">
+        <option value="">Select a thing</option>
+        <option value="thing_1">Thing 1</option>
+        <option value="thing_2">Thing 2</option>
+      </select>
+
+      <label for="other-thing-1" id="radio-label-1">
+        <input id="other-thing-1" name="radio-group" type="radio" value="other_thing_1">Other Thing 1
+      </label>
+      <label for="other-thing-2" id="radio-label-2">
+        <input id="other-thing-2" name="radio-group" type="radio" value="other_thing_2">Other Thing 2
+      </label>
+
+      <label for="checkbox-1" id="checkbox-label-1">
+        <input id="checkbox-1" type="checkbox" value="another-thing-1">
+      </label>
+
+      <label for="checkbox-1" id="checkbox-label-2">
+        <input id="checkbox-2" type="checkbox" value="another-thing-2">
+      </label>
+
+      <label for="comments" id="comments-label">Comments:</label>
+      <textarea id="comments"></textarea>
+
+      <button id="submit" type="submit">Submit your survey!</button>
+    </form>
+  </section>
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
