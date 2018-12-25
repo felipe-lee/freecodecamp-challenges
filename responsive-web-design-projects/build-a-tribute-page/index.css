@@ -67,7 +67,7 @@ img {
 @media only screen and (max-width: 600px) {
   .time-card:hover {
     transform: scale(1.05);
-    margin: 5% auto;
+    margin: 2% auto;
   }
 }
 
@@ -75,23 +75,23 @@ img {
 @media only screen and (min-width: 600px) {
   .time-card:hover {
     transform: scale(1.1);
-    margin: 6% auto;
+    margin: 2% auto;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .time-card:hover {
-    transform: scale(1.1);
-    margin: 4% auto;
-  }
-}
+/*@media only screen and (min-width: 768px) {*/
+/*.time-card:hover {*/
+/*transform: scale(1.1);*/
+/*margin: 2% auto;*/
+/*}*/
+/*}*/
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .time-card:hover {
     transform: scale(1.2);
-    margin: 6% auto;
+    margin: 2.5% auto;
   }
 }
 
@@ -99,7 +99,7 @@ img {
 @media only screen and (min-width: 1200px) {
   .time-card:hover {
     transform: scale(1.2);
-    margin: 5% auto;
+    margin: 2% auto;
   }
 }
 
