@@ -50,39 +50,61 @@ img {
   /*display: flex; */
   box-shadow: 5px 5px 20px rgba(22, 39, 86, 0.3);
   height: auto;
-  width: 30vw;
+  width: 80vw;
   background-color: #162756;
   padding: 3px 5px;
   border-radius: 0;
   margin: auto auto 10px;
 }
 
+.time-card:hover {
+  animation-name: focused-element;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
 /* Extra small devices (phones, 600px and down) */
-/*@media only screen and (max-width: 600px) {}*/
+@media only screen and (max-width: 600px) {
+  .time-card:hover {
+    transform: scale(1.05);
+    margin: 5% auto;
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/*@media only screen and (min-width: 600px) {}*/
+@media only screen and (min-width: 600px) {
+  .time-card:hover {
+    transform: scale(1.1);
+    margin: 6% auto;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .time-card:hover {
-    transform: scale(1.2);
-    margin: 40px auto;
+    transform: scale(1.1);
+    margin: 4% auto;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .time-card:hover {
-    transform: scale(1.35);
-    margin: 55px auto;
+    transform: scale(1.2);
+    margin: 6% auto;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .time-card:hover {
-    transform: scale(1.5);
-    margin: 50px auto;
+    transform: scale(1.2);
+    margin: 5% auto;
+  }
+}
+
+@keyframes focused-element {
+  100% {
+    background-color: #061439;
   }
 }
