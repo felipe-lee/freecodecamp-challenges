@@ -4,53 +4,103 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
   <meta content="Survey form page" name="Description"/>
-  <title>Survey Form</title>
+  <title>Create a Character</title>
 </head>
 <body>
 <main id="main">
   <section>
     <header>
-      <h1 id="title">Survey Form</h1>
-      <p id="description">Form to survey people!</p>
+      <h1 id="title">Create a Character!</h1>
+      <p id="description">Create a character by filling out the info below.</p>
     </header>
 
     <form id="survey-form">
-      <label for="name" id="name-label">Name:</label>
-      <input id="name" placeholder="Write your name here" required type="text">
-
-      <label for="email" id="email-label">Email:</label>
+      <label for="email" id="email-label">Email (for profile):</label>
       <input id="email" placeholder="Input your email here" required type="email">
 
-      <label for="number" id="number-label">Number:</label>
-      <input id="number" max="99" min="1" placeholder="Input a number here" type="number">
+      <fieldset>
+        <legend>Character Biographical Information</legend>
 
-      <label for="dropdown" id="dropdown-label">Things</label>
-      <select id="dropdown">
-        <option value="">Select a thing</option>
-        <option value="thing_1">Thing 1</option>
-        <option value="thing_2">Thing 2</option>
-      </select>
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" placeholder="Write your character's name here" required type="text">
 
-      <label for="other-thing-1" id="radio-label-1">
-        <input id="other-thing-1" name="radio-group" type="radio" value="other_thing_1">Other Thing 1
-      </label>
-      <label for="other-thing-2" id="radio-label-2">
-        <input id="other-thing-2" name="radio-group" type="radio" value="other_thing_2">Other Thing 2
-      </label>
+        <label for="number" id="number-label">Age:</label>
+        <input id="number" max="9999" min="1" placeholder="Age" type="number">
+      </fieldset>
 
-      <label for="checkbox-1" id="checkbox-label-1">
-        <input id="checkbox-1" type="checkbox" value="another-thing-1">
-      </label>
+      <fieldset>
+        <legend>Body Characteristics</legend>
 
-      <label for="checkbox-1" id="checkbox-label-2">
-        <input id="checkbox-2" type="checkbox" value="another-thing-2">
-      </label>
+        <label for="dropdown" id="dropdown-label">Unit of Measurement</label>
+        <select id="dropdown">
+          <option value="">Select a unit</option>
+          <option value="metric">Metric</option>
+          <option value="imperial">Imperial</option>
+        </select>
+
+        <label for="char-height" id="char-height-label">Height:</label>
+        <input id="char-height" max="9999" min="1" placeholder="Age" type="number">
+      </fieldset>
+
+      <fieldset>
+        <legend>Alignment - Good vs. Evil</legend>
+
+        <label for="alignment-good" id="alignment-good-label">
+          <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">Good
+        </label>
+        <label for="alignment-neutral-ge" id="alignment-neutral-ge-label">
+          <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">Neutral
+        </label>
+        <label for="alignment-evil" id="alignment-evil-label">
+          <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">Evil
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Alignment - Law vs. Chaos</legend>
+
+        <label for="alignment-law" id="alignment-law-label">
+          <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">Law
+        </label>
+        <label for="alignment-neutral-lc" id="alignment-neutral-lc-label">
+          <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">Neutral
+        </label>
+        <label for="alignment-chaos" id="alignment-chaos-label">
+          <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">Chaos
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend></legend>
+
+        <label for="checkbox-1" id="checkbox-label-1">
+          <input id="checkbox-1" type="checkbox" value="another-thing-1">Another thing 1
+        </label>
+
+        <label for="checkbox-1" id="checkbox-label-2">
+          <input id="checkbox-2" type="checkbox" value="another-thing-2">Another thing 2
+        </label>
+      </fieldset>
 
       <label for="comments" id="comments-label">Comments:</label>
       <textarea id="comments"></textarea>
 
-      <button id="submit" type="submit">Submit your survey!</button>
+      <button id="submit" type="submit">Create your character!</button>
     </form>
+
+    <footer>
+      <h2>Resources</h2>
+
+      <p>
+        If you need help deciding what to choose, you can use the resources below to help you out:
+      </p>
+      <ul>
+        <li><a href="http://www.easydamus.com/alignment.html" id="alignment-resource" rel="noreferrer noopener"
+               target="_blank">Alignment Information</a></li>
+        <li><a href="http://bodyvisualizer.com/" id="body-resource" rel="noreferrer noopener"
+               target="_blank">Body Visualizer</a></li>
+      </ul>
+    </footer>
   </section>
 </main>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
