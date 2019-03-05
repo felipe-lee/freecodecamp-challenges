@@ -34,10 +34,12 @@ form {
   padding: 1vh 1vw;
   background: tan;
   background: var(--tan-color, tan);
+  box-shadow: 0.2vw 0.2vh 0.5vw 0 var(--blackboard-color, black);
 }
 
-form button {
-  color: #FFFFFF;
+fieldset {
+  padding: 1vh 1vw;
+  margin: 1vh 0.5vw;
 }
 
 button {
@@ -46,4 +48,5 @@ button {
   border: 0;
   border-radius: 5px;
   padding: 1vh 1vw;
+  color: #FFFFFF;
 }
