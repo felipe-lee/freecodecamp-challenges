@@ -1,0 +1,36 @@
+body {
+  background-color: #D7CEC7;
+}
+
+h1, h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #76323f
+}
+
+label, legend, p, li, .button-text, option, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder,
+:-moz-placeholder {
+  font-family: 'Arimo', sans-serif;
+}
+
+header, h2 {
+  text-align: center;
+}
+
+form {
+  border: 2px solid #C09F80;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 1em;
+  background: #C09F80;
+}
+
+form button {
+  color: #FFFFFF;
+}
+
+button {
+  background: #565656;
+  border: 0;
+  border-radius: 5px;
+  padding: 1em;
+}
