@@ -35,6 +35,8 @@ form {
   background: tan;
   background: var(--tan-color, tan);
   box-shadow: 0.2vw 0.2vh 0.5vw 0 var(--blackboard-color, black);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 fieldset {
@@ -49,4 +51,25 @@ button {
   border-radius: 5px;
   padding: 1vh 1vw;
   color: #FFFFFF;
+}
+
+.fieldset-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#bio-input {
+  display: grid;
+}
+
+#character-bio {
+  height: 10vw;
+}
+
+#email-label {
+  /*width: 50%;*/
+}
+
+fieldset label {
+  /*width: 100%;*/
 }
