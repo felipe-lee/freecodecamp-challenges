@@ -25,6 +25,23 @@ header, h2 {
   text-align: center;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-col-25-75 {
+  grid-template-columns: 25% 75%;
+}
+
+.grid-col-50-50 {
+  grid-template-columns: 50% 50%;
+}
+
+.grid-col-33-33-33 {
+  grid-template-columns: 33% 33% 33%;
+}
+
 form {
   border: 2px solid;
   border-color: tan;
@@ -35,8 +52,6 @@ form {
   background: tan;
   background: var(--tan-color, tan);
   box-shadow: 0.2vw 0.2vh 0.5vw 0 var(--blackboard-color, black);
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 fieldset {
@@ -53,15 +68,6 @@ button {
   color: #FFFFFF;
 }
 
-.fieldset-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#bio-input {
-  display: grid;
-}
-
 #character-bio {
   height: 10vw;
 }
@@ -71,5 +77,5 @@ button {
 }
 
 fieldset label {
-  /*width: 100%;*/
+  padding-right: 1em;
 }

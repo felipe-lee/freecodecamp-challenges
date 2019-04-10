@@ -18,7 +18,7 @@
       <p id="description">Create a character by filling out the info below.</p>
     </header>
 
-    <form id="survey-form">
+    <form class="grid" id="survey-form">
       <div id="email-input">
         <label for="email" id="email-label">Email (for profile):</label>
         <input id="email" placeholder="Input your email here" required type="email">
@@ -27,7 +27,7 @@
       <fieldset>
         <legend>Character Biographical Information</legend>
 
-        <div class="fieldset-grid">
+        <div class="grid grid-col-25-75">
           <label for="name" id="name-label">Name:</label>
           <input id="name" placeholder="Write your character's name here" required type="text">
 
@@ -42,8 +42,8 @@
       <fieldset>
         <legend>Body Characteristics</legend>
 
-        <div class="fieldset-grid">
-          <label for="dropdown" id="dropdown-label">Unit of Measurement</label>
+        <div class="grid grid-col-25-75">
+          <label for="dropdown" id="dropdown-label">Unit of Measurement:</label>
           <select id="dropdown">
             <option value="">Select a unit</option>
             <option value="metric">Metric</option>
@@ -79,7 +79,7 @@
         </div>
       </fieldset>
 
-      <div class="fieldset-grid">
+      <div class="grid grid-col-50-50">
         <fieldset>
           <legend>Alignment - Good vs. Evil</legend>
 
@@ -113,7 +113,7 @@
         <legend>Gender Identity</legend>
         <p>Which term best describes your character's gender?</p>
 
-        <div class="fieldset-grid">
+        <div class="grid grid-col-33-33-33">
           <label for="gender-fluid" id="gender-fluid-label">
             <input id="gender-fluid" type="checkbox" value="fluid">Fluid
           </label>
@@ -160,7 +160,7 @@
         <input id="gender-free-form-entry" type="text">
       </fieldset>
 
-      <div id="bio-input">
+      <div class="grid" id="bio-input">
         <label for="character-bio" id="character-bio-label">Character Bio:</label>
         <textarea id="character-bio"></textarea>
       </div>
