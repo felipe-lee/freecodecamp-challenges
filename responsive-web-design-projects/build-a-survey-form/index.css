@@ -65,6 +65,7 @@ button {
   border: 0;
   border-radius: 5px;
   padding: 1vh 1vw;
+  margin-top: 1vh;
   color: #FFFFFF;
 }
 
@@ -72,8 +73,9 @@ button {
   height: 10vw;
 }
 
-#email-label {
-  /*width: 50%;*/
+#email-input, #bio-input, #submit {
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 fieldset label {
