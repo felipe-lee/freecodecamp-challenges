@@ -24,141 +24,152 @@
         <input id="email" placeholder="Input your email here" required type="email">
       </div>
 
-      <fieldset>
-        <legend>Character Biographical Information</legend>
-
-        <div class="grid grid-col-25-75">
-          <label for="name" id="name-label">Name:</label>
-          <input id="name" placeholder="Write your character's name here" required type="text">
-
-          <label for="number" id="number-label">Age:</label>
-          <input id="number" max="9999" min="1" placeholder="Age" type="number">
-
-          <label for="date-of-birth" id="date-of-birth-label">Date of Birth (alternative to age):</label>
-          <input id="date-of-birth" placeholder="mm/dd/yyyy" type="date">
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Body Characteristics</legend>
-
-        <div class="grid grid-col-25-75">
-          <label for="dropdown" id="dropdown-label">Unit of Measurement:</label>
-          <select id="dropdown">
-            <option value="">Select a unit</option>
-            <option value="metric">Metric</option>
-            <option value="imperial">Imperial</option>
-          </select>
-
-          <label for="height" id="height-label">Height:</label>
-          <input id="height" max="99999" min="1" placeholder="cm/in" type="number">
-
-          <label for="weight" id="weight-label">Weight:</label>
-          <input id="weight" max="99999" min="1" placeholder="kg/lb" type="number">
-
-          <label for="chest" id="chest-label">Chest:</label>
-          <input id="chest" max="9999" min="1" placeholder="cm/in" type="number">
-
-          <label for="waist" id="waist-label">Waist:</label>
-          <input id="waist" max="9999" min="1" placeholder="cm/in" type="number">
-
-          <label for="hips" id="hips-label">Hips:</label>
-          <input id="hips" max="9999" min="1" placeholder="cm/in" type="number">
-
-          <label for="inseam" id="inseam-label">Inseam:</label>
-          <input id="inseam" max="9999" min="1" placeholder="cm/in" type="number">
-
-          <label for="hair-color" id="hair-color-label">Hair color:</label>
-          <input id="hair-color" type="color">
-
-          <label for="eye-color" id="eye-color-label">Eye color:</label>
-          <input id="eye-color" type="color">
-
-          <label for="skin-color" id="skin-color-label">Skin color:</label>
-          <input id="skin-color" type="color">
-        </div>
-      </fieldset>
-
-      <div class="grid grid-col-50-50">
+      <div id="bio-info">
         <fieldset>
-          <legend>Alignment - Good vs. Evil</legend>
+          <legend>Character Biographical Information</legend>
 
-          <label for="alignment-good" id="alignment-good-label">
-            <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">Good
-          </label>
-          <label for="alignment-neutral-ge" id="alignment-neutral-ge-label">
-            <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">Neutral
-          </label>
-          <label for="alignment-evil" id="alignment-evil-label">
-            <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">Evil
-          </label>
-        </fieldset>
+          <div class="grid grid-col-25-75">
+            <label for="name" id="name-label">Name:</label>
+            <input id="name" placeholder="Write your character's name here" required type="text">
 
-        <fieldset>
-          <legend>Alignment - Law vs. Chaos</legend>
+            <label for="number" id="number-label">Age:</label>
+            <input id="number" max="9999" min="1" placeholder="Age" type="number">
 
-          <label for="alignment-law" id="alignment-law-label">
-            <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">Law
-          </label>
-          <label for="alignment-neutral-lc" id="alignment-neutral-lc-label">
-            <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">Neutral
-          </label>
-          <label for="alignment-chaos" id="alignment-chaos-label">
-            <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">Chaos
-          </label>
+            <label for="date-of-birth" id="date-of-birth-label">Date of Birth (alternative to age):</label>
+            <input id="date-of-birth" placeholder="mm/dd/yyyy" type="date">
+          </div>
         </fieldset>
       </div>
 
-      <fieldset id="gender-identity">
-        <legend>Gender Identity</legend>
-        <p>Which term best describes your character's gender?</p>
+      <div id="body-chars">
+        <fieldset>
+          <legend>Body Characteristics</legend>
 
-        <div class="grid grid-col-33-33-33">
-          <label for="gender-fluid" id="gender-fluid-label">
-            <input id="gender-fluid" type="checkbox" value="fluid">Fluid
-          </label>
+          <div class="grid grid-col-25-75">
+            <label for="dropdown" id="dropdown-label">Unit of Measurement:</label>
+            <select id="dropdown">
+              <option value="">Select a unit</option>
+              <option value="metric">Metric</option>
+              <option value="imperial">Imperial</option>
+            </select>
 
-          <label for="gender-intersex" id="gender-intersex-label">
-            <input id="gender-intersex" type="checkbox" value="intersex">Intersex
-          </label>
+            <label for="height" id="height-label">Height:</label>
+            <input id="height" max="99999" min="1" placeholder="cm/in" type="number">
 
-          <label for="gender-non-binary" id="gender-non-binary-label">
-            <input id="gender-non-binary" type="checkbox" value="non-binary">Non-binary
-          </label>
+            <label for="weight" id="weight-label">Weight:</label>
+            <input id="weight" max="99999" min="1" placeholder="kg/lb" type="number">
 
-          <label for="gender-transgender-man" id="gender-transgender-man-label">
-            <input id="gender-transgender-man" type="checkbox" value="transgender-man">Transgender man
-          </label>
+            <label for="chest" id="chest-label">Chest:</label>
+            <input id="chest" max="9999" min="1" placeholder="cm/in" type="number">
 
-          <label for="gender-transgender-woman" id="gender-transgender-woman-label">
-            <input id="gender-transgender-woman" type="checkbox" value="transgender-woman">Transgender woman
-          </label>
+            <label for="waist" id="waist-label">Waist:</label>
+            <input id="waist" max="9999" min="1" placeholder="cm/in" type="number">
 
-          <label for="gender-cisgender-man" id="gender-cisgender-man-label">
-            <input id="gender-cisgender-man" type="checkbox" value="cisgender-man">Non-transgender man (cisgender)
-          </label>
+            <label for="hips" id="hips-label">Hips:</label>
+            <input id="hips" max="9999" min="1" placeholder="cm/in" type="number">
 
-          <label for="gender-cisgender-woman" id="gender-cisgender-woman-label">
-            <input id="gender-cisgender-woman" type="checkbox" value="cisgender-woman">Non-transgender woman (cisgender)
-          </label>
+            <label for="inseam" id="inseam-label">Inseam:</label>
+            <input id="inseam" max="9999" min="1" placeholder="cm/in" type="number">
 
-          <label for="gender-questioning" id="gender-questioning-label">
-            <input id="gender-questioning" type="checkbox" value="questioning">Questioning
-          </label>
+            <label for="hair-color" id="hair-color-label">Hair color:</label>
+            <input id="hair-color" type="color">
 
-          <label for="gender-prefer-no-answer" id="gender-prefer-no-answer-label">
-            <input id="gender-prefer-no-answer" type="checkbox" value="prefer-no-answer">Prefer not to answer
-          </label>
+            <label for="eye-color" id="eye-color-label">Eye color:</label>
+            <input id="eye-color" type="color">
 
-          <label for="gender-another-gender" id="gender-another-gender-label">
-            <input id="gender-another-gender" type="checkbox" value="another-gender">Another gender (see next field)
-          </label>
+            <label for="skin-color" id="skin-color-label">Skin color:</label>
+            <input id="skin-color" type="color">
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="grid" id="alignment">
+        <div id="alignment-good-evil">
+          <fieldset>
+            <legend>Alignment - Good vs. Evil</legend>
+
+            <label for="alignment-good" id="alignment-good-label">
+              <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">Good
+            </label>
+            <label for="alignment-neutral-ge" id="alignment-neutral-ge-label">
+              <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">Neutral
+            </label>
+            <label for="alignment-evil" id="alignment-evil-label">
+              <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">Evil
+            </label>
+          </fieldset>
         </div>
 
-        <label for="gender-free-form-entry" id="gender-free-form-entry-label">Please write in your character's gender
-          here (if not found above, and you want to select a gender):</label>
-        <input id="gender-free-form-entry" type="text">
-      </fieldset>
+        <div id="alignment-law-chaos">
+          <fieldset>
+            <legend>Alignment - Law vs. Chaos</legend>
+
+            <label for="alignment-law" id="alignment-law-label">
+              <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">Law
+            </label>
+            <label for="alignment-neutral-lc" id="alignment-neutral-lc-label">
+              <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">Neutral
+            </label>
+            <label for="alignment-chaos" id="alignment-chaos-label">
+              <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">Chaos
+            </label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div id="gender-identity">
+        <fieldset>
+          <legend>Gender Identity</legend>
+          <p>Which term best describes your character's gender?</p>
+
+          <div class="grid grid-col-33-33-33">
+            <label for="gender-fluid" id="gender-fluid-label">
+              <input id="gender-fluid" type="checkbox" value="fluid">Fluid
+            </label>
+
+            <label for="gender-intersex" id="gender-intersex-label">
+              <input id="gender-intersex" type="checkbox" value="intersex">Intersex
+            </label>
+
+            <label for="gender-non-binary" id="gender-non-binary-label">
+              <input id="gender-non-binary" type="checkbox" value="non-binary">Non-binary
+            </label>
+
+            <label for="gender-transgender-man" id="gender-transgender-man-label">
+              <input id="gender-transgender-man" type="checkbox" value="transgender-man">Transgender man
+            </label>
+
+            <label for="gender-transgender-woman" id="gender-transgender-woman-label">
+              <input id="gender-transgender-woman" type="checkbox" value="transgender-woman">Transgender woman
+            </label>
+
+            <label for="gender-cisgender-man" id="gender-cisgender-man-label">
+              <input id="gender-cisgender-man" type="checkbox" value="cisgender-man">Non-transgender man (cisgender)
+            </label>
+
+            <label for="gender-cisgender-woman" id="gender-cisgender-woman-label">
+              <input id="gender-cisgender-woman" type="checkbox" value="cisgender-woman">Non-transgender woman
+              (cisgender)
+            </label>
+
+            <label for="gender-questioning" id="gender-questioning-label">
+              <input id="gender-questioning" type="checkbox" value="questioning">Questioning
+            </label>
+
+            <label for="gender-prefer-no-answer" id="gender-prefer-no-answer-label">
+              <input id="gender-prefer-no-answer" type="checkbox" value="prefer-no-answer">Prefer not to answer
+            </label>
+
+            <label for="gender-another-gender" id="gender-another-gender-label">
+              <input id="gender-another-gender" type="checkbox" value="another-gender">Another gender (see next field)
+            </label>
+          </div>
+
+          <label for="gender-free-form-entry" id="gender-free-form-entry-label">Please write in your character's gender
+            here (if not found above, and you want to select a gender):</label>
+          <input id="gender-free-form-entry" type="text">
+        </fieldset>
+      </div>
 
       <div class="grid" id="bio-input">
         <label for="character-bio" id="character-bio-label">Character Bio:</label>

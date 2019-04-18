@@ -27,22 +27,22 @@ header, h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  /*grid-template-columns: 1fr;*/
 }
 
-.grid-col-25-75 {
-  grid-template-columns: 25% 75%;
-}
+/*.grid-col-25-75 {*/
+/*  grid-template-columns: 1fr 3fr;*/
+/*}*/
 
-.grid-col-50-50 {
-  grid-template-columns: 50% 50%;
-}
+/*.grid-col-50-50 {*/
+/*  grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));*/
+/*}*/
 
-.grid-col-33-33-33 {
-  grid-template-columns: 33% 33% 33%;
-}
+/*.grid-col-33-33-33 {*/
+/*  grid-template-columns: repeat(3, 1fr);*/
+/*}*/
 
-form {
+#survey-form {
   border: 2px solid;
   border-color: tan;
   border-color: var(--tan-color, tan);
@@ -52,6 +52,7 @@ form {
   background: tan;
   background: var(--tan-color, tan);
   box-shadow: 0.2vw 0.2vh 0.5vw 0 var(--blackboard-color, black);
+  grid-template-areas: "profile" "bio-info" "body-chars" "alignment" "gender-identity" "bio";
 }
 
 fieldset {
@@ -69,15 +70,50 @@ button {
   color: #FFFFFF;
 }
 
+#email-input {
+  grid-area: profile;
+}
+
+#bio-info {
+  grid-area: bio-info;
+}
+
+#body-chars {
+  grid-area: body-chars;
+}
+
+#alignment {
+  grid-area: alignment;
+}
+
+#gender-identity {
+  grid-area: gender-identity;
+}
+
+#bio-input {
+  grid-area: bio;
+}
+
 #character-bio {
   height: 10vw;
 }
 
-#email-input, #bio-input, #submit {
+#email-input, #bio-input, #submit, input, select {
   margin-left: 1vw;
   margin-right: 1vw;
 }
 
 fieldset label {
   padding-right: 1em;
+}
+
+@media (min-width: 1000px) {
+  .grid-col-25-75 {
+    grid-template-columns: auto 1fr;
+  }
+
+  #alignment {
+    grid-template-areas: "good-evil law-chaos";
+    grid-template-columns: 1fr 1fr;
+  }
 }
