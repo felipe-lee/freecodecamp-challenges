@@ -19,7 +19,7 @@
     </header>
 
     <form class="grid" id="survey-form">
-      <div class="grid grid-col-25-75" id="email-input">
+      <div class="grid grid-col-auto-1fr" id="email-input">
         <label for="email" id="email-label">Email (for profile):</label>
         <input id="email" placeholder="Input your email here" required type="email">
       </div>
@@ -28,7 +28,7 @@
         <fieldset>
           <legend>Character Biographical Information</legend>
 
-          <div class="grid grid-col-25-75">
+          <div class="grid grid-col-auto-1fr">
             <label for="name" id="name-label">Name:</label>
             <input id="name" placeholder="Write your character's name here" required type="text">
 
@@ -45,7 +45,7 @@
         <fieldset>
           <legend>Body Characteristics</legend>
 
-          <div class="grid grid-col-25-75">
+          <div class="grid grid-col-auto-1fr">
             <label for="dropdown" id="dropdown-label">Unit of Measurement:</label>
             <select id="dropdown">
               <option value="">Select a unit</option>
@@ -88,15 +88,17 @@
           <fieldset>
             <legend>Alignment - Good vs. Evil</legend>
 
-            <label for="alignment-good" id="alignment-good-label">
-              <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">Good
-            </label>
-            <label for="alignment-neutral-ge" id="alignment-neutral-ge-label">
-              <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">Neutral
-            </label>
-            <label for="alignment-evil" id="alignment-evil-label">
-              <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">Evil
-            </label>
+            <div class="grid alignment-choices">
+              <label for="alignment-good" id="alignment-good-label">
+                <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">Good
+              </label>
+              <label for="alignment-neutral-ge" id="alignment-neutral-ge-label">
+                <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">Neutral
+              </label>
+              <label for="alignment-evil" id="alignment-evil-label">
+                <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">Evil
+              </label>
+            </div>
           </fieldset>
         </div>
 
@@ -104,15 +106,17 @@
           <fieldset>
             <legend>Alignment - Law vs. Chaos</legend>
 
-            <label for="alignment-law" id="alignment-law-label">
-              <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">Law
-            </label>
-            <label for="alignment-neutral-lc" id="alignment-neutral-lc-label">
-              <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">Neutral
-            </label>
-            <label for="alignment-chaos" id="alignment-chaos-label">
-              <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">Chaos
-            </label>
+            <div class="grid alignment-choices">
+              <label for="alignment-law" id="alignment-law-label">
+                <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">Law
+              </label>
+              <label for="alignment-neutral-lc" id="alignment-neutral-lc-label">
+                <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">Neutral
+              </label>
+              <label for="alignment-chaos" id="alignment-chaos-label">
+                <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">Chaos
+              </label>
+            </div>
           </fieldset>
         </div>
       </div>
@@ -122,7 +126,7 @@
           <legend>Gender Identity</legend>
           <p>Which term best describes your character's gender?</p>
 
-          <div class="grid grid-col-33-33-33">
+          <div class="grid" id="gender-identity-options">
             <label for="gender-fluid" id="gender-fluid-label">
               <input id="gender-fluid" type="checkbox" value="fluid">Fluid
             </label>
