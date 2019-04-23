@@ -116,8 +116,7 @@ fieldset label {
 
   .alignment-choices {
     grid-template-areas: "choice choice choice";
-    grid-template-columns: repeat(auto-fill, 1fr);
-    justify-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
 
