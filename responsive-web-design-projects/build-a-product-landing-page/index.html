@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
     <meta content="Product Landing Page" name="Description"/>
 
-    <title>Sushi Lessons</title>
+    <title>Sushi Junai</title>
 
     <link href="https://fonts.googleapis.com/css?family=Arimo|Merriweather+Sans" rel="stylesheet">
     <link href="./index.css" rel="stylesheet" type="text/css">
@@ -13,16 +13,19 @@
 <body>
 <header id="header">
     <img alt="Sushi Logo" id="header-img" src="img/sushi-logo.jpg">
+    <h1>Sushi Junai</h1>
     <nav id="nav-bar">
         <ul>
             <li><a class="nav-link" href="#sign-up-section">Sign Up</a></li>
             <li><a class="nav-link" href="#about-us-section">About Us</a></li>
-            <li><a class="nav-link" href="#lessons-section">Lessons</a></li>
+            <li><a class="nav-link" href="#menu-section">Menu</a></li>
+            <li><a class="nav-link" href="#locations-section">Locations</a></li>
         </ul>
     </nav>
 </header>
 <main id="main">
     <section id="sign-up-section">
+        <h2>Sign Up</h2>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
             <label for="email">Sign Up Email:</label>
             <input id="email" name="email" placeholder="Enter your email address" type="email">
@@ -30,13 +33,57 @@
         </form>
     </section>
     <section id="about-us-section">
-        <h2></h2>
+        <h2>About Us</h2>
         <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                 frameborder="0" height="315" id="video" src="https://www.youtube-nocookie.com/embed/lXZnRxbiZdc"
                 width="560"></iframe>
-    </section>
-    <section id="lessons-section">
 
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>(function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your like button code -->
+        <div class="fb-like"
+             data-action="like"
+             data-href="https://www.your-domain.com/your-page.html"
+             data-layout="standard"
+             data-show-faces="true">
+        </div>
+    </section>
+    <section id="menu-section">
+        <h2>Menu</h2>
+        <h3>Nigiri</h3>
+        <img alt="salmon and salmon belly nigiri" src="img/nigiri.jpg">
+        <h3>Sushi</h3>
+        <img alt="cucumber sushi roll" src="img/cucumber-roll.jpg">
+    </section>
+    <section id="locations-section">
+        <h2>Locations</h2>
+        <div>
+            <h3>Sushi Junai</h3>
+            <p class="address">1612 Lavaca St
+                Austin, TX 78701
+            </p>
+            <iframe allowfullscreen frameborder="0" height="450"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d439878.1101896619!2d-98.11094753881103!3d30.533825254061963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5758090facb%3A0x685f39758ce775eb!2sSUSHI+JUNAI!5e0!3m2!1sen!2sus!4v1563153902886!5m2!1sen!2sus"
+                    style="border:0" width="600"></iframe>
+        </div>
+        <div>
+            <h3>Sushi Junai 2</h3>
+            <p class="address">2500 W Parmer Ln #100
+                Austin, TX 78727
+            </p>
+            <iframe allowfullscreen frameborder="0" height="450"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d439878.1101896619!2d-98.11094753881103!3d30.533825254061963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cc26c9245497%3A0x47028dad253fafea!2sSushi+Junai+2!5e0!3m2!1sen!2sus!4v1563153923892!5m2!1sen!2sus"
+                    style="border:0" width="600"></iframe>
+        </div>
     </section>
 </main>
 <footer>
