@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(180deg, #FFFFFF, #93A3B1);
+}
+
+h1, h2 {
+    font-family: 'Arimo', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    margin: 0.2em;
+}
+
+#header-img {
+    width: 2em;
+    height: 2em;
+}
+
+.address {
+    white-space: pre-line;
+}
+
+/*https://coolors.co/93a3b1-b5aca3-387780-353535-ffffff*/
