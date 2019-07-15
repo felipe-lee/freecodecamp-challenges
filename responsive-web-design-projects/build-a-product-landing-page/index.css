@@ -1,38 +1,41 @@
-body {
-    background: linear-gradient(180deg, #FFFFFF, #93A3B1);
-}
-
-h1, h2 {
-    font-family: 'Arimo', sans-serif;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
-#header {
+/*body {*/
+/*    background: linear-gradient(180deg, #FFFFFF, #93A3B1);*/
+/*}*/
+footer {
     display: flex;
-    align-items: center;
 }
 
-#nav-bar ul {
-    display: flex;
-    list-style: none;
-}
+/*h1, h2 {*/
+/*    font-family: 'Arimo', sans-serif;*/
+/*}*/
 
-.nav-link {
-    margin: 0.2em;
-}
+/*img {*/
+/*    max-width: 100%;*/
+/*    display: block;*/
+/*    height: auto;*/
+/*}*/
 
-#header-img {
-    width: 2em;
-    height: 2em;
-}
+/*#header {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
 
-.address {
-    white-space: pre-line;
-}
+/*#nav-bar ul {*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*}*/
 
-/*https://coolors.co/93a3b1-b5aca3-387780-353535-ffffff*/
+/*.nav-link {*/
+/*    margin: 0.2em;*/
+/*}*/
+
+/*#header-img {*/
+/*    width: 2em;*/
+/*    height: 2em;*/
+/*}*/
+
+/*.address {*/
+/*    white-space: pre-line;*/
+/*}*/
+
+/*!*https://coolors.co/93a3b1-b5aca3-387780-353535-ffffff*!*/
