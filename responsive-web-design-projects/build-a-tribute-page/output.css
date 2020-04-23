@@ -595,6 +595,20 @@ video {
   height: auto;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 @tailwind componenets;
 
 .space-y-0 > :not(template) ~ :not(template) {

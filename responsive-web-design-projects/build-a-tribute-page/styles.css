@@ -1,3 +1,16 @@
 @tailwind base;
+
+h1, h2 {
+  @apply text-center;
+}
+
+h1 {
+  @apply text-6xl;
+}
+
+h2 {
+  @apply text-5xl mt-4 mb-8;
+}
+
 @tailwind componenets;
 @tailwind utilities;
