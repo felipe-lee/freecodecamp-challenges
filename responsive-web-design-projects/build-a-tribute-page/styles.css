@@ -13,4 +13,13 @@ h2 {
 }
 
 @tailwind componenets;
+
+.time-link {
+  @apply p-2 rounded-full bg-tertiary;
+}
+
+.time-link:hover {
+  @apply bg-secondary text-primary;
+}
+
 @tailwind utilities;
