@@ -8,9 +8,7 @@
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.4.0"
   },
-  "scripts": {
-    "build": "webpack"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "p-github:felipe-lee/freecodecamp-challenges.git"
