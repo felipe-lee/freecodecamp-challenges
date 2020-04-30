@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  <meta content="Survey form page" name="Description"/>
+  <meta content="Character Survey Page" name="Description"/>
 
-  <title>Create a Character</title>
+  <title>Character Survey</title>
 
   <link href="./output.css" rel="stylesheet" type="text/css">
 </head>
@@ -13,8 +13,8 @@
 <main id="main">
   <section>
     <header>
-      <h1 id="title">Create a Character!</h1>
-      <p id="description">Create a character by filling out the info below.</p>
+      <h1 id="title">Character Survey</h1>
+      <p id="description">Fill out the survey below, letting us know what kind of character you would like to be in a fantasy world.</p>
     </header>
 
     <form class="grid" id="survey-form">
@@ -34,8 +34,8 @@
             <label for="number" id="number-label">Age:</label>
             <input id="number" max="9999" min="1" placeholder="Age" type="number">
 
-            <label for="date-of-birth" id="date-of-birth-label">Date of Birth (alternative to age):</label>
-            <input id="date-of-birth" placeholder="mm/dd/yyyy" type="date">
+            <label for="hometown" id="hometown-label">Hometown:</label>
+            <input id="hometown" placeholder="Where is your character from?" type="text">
           </div>
         </fieldset>
       </div>
@@ -179,7 +179,7 @@
         <textarea id="character-bio"></textarea>
       </div>
 
-      <button id="submit" type="submit"><span class="button-text">Create your character!</span></button>
+      <button id="submit" type="submit"><span class="button-text">Submit your character</span></button>
     </form>
 
     <footer>
