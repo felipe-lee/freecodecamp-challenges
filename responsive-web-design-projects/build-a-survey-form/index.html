@@ -19,21 +19,19 @@
     </header>
 
     <section class="mx-6 mt-12">
-      <form id="survey-form" class="w-full max-w-lg">
-        <div id="email-input" class="md:flex md:items-center mb-6">
-          <div class="">
-            <label for="email" id="email-label" class="block font-bold md:text-right mb-1 md:mb-0 pr-4">Email (for
-              profile):</label>
-          </div>
-          <div class="">
-            <input id="email" placeholder="Input your email here" required type="email"
-                   class="bg-gray-200 appearance-none border-2 border-gray-200 rounded-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
-          </div>
+      <form id="survey-form" class="w-full">
+        <div id="email-input" class="w-full mb-6">
+          <label for="email" id="email-label" class="block tracking-wide text-gray-700 font-bold mb-2">Email</label>
+          <input id="email" placeholder="my_name@gmail.com" required type="email"
+                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+          <p class="text-gray-600 text-xs italic">
+            This is for your profile.
+          </p>
         </div>
 
-        <div id="bio-info" class="flex flex-wrap -mx-3 mb-6">
-          <h2 class="w-full text-3xl mb-6">Character Biographical Information</h2>
-          <div class="w-full md:w-1/2 px-3 mb-6">
+        <div id="bio-info" class="flex flex-wrap mb-6">
+          <h2 class="w-full text-3xl mb-6">Biographical Information</h2>
+          <div class="w-full md:w-2/3 px-3 mb-6">
             <label for="name" id="name-label" class="block tracking-wide text-gray-700 font-bold mb-2">Name</label>
             <input id="name" placeholder="Helmig Hammerarm" required type="text"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
@@ -46,7 +44,7 @@
             </p>
           </div>
 
-          <div class="w-full md:w-1/2 px-3 mb-6">
+          <div class="w-full md:w-1/3 px-3 mb-6">
             <label for="number" id="number-label" class="block tracking-wide text-gray-700 font-bold mb-2">Age</label>
             <input id="number" max="9999" min="1" placeholder="150" type="number"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
