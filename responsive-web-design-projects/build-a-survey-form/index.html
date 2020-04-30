@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  <meta content="Pet Survey" name="Description"/>
+  <meta content="Survey form page" name="Description"/>
 
-  <title>Pet Survey</title>
+  <title>Create a Character</title>
 
   <link href="./output.css" rel="stylesheet" type="text/css">
 </head>
@@ -13,8 +13,8 @@
 <main id="main">
   <section>
     <header>
-      <h1 id="title">Tell Us About Your Pet!</h1>
-      <p id="description">Let us know all about your pet</p>
+      <h1 id="title">Create a Character!</h1>
+      <p id="description">Create a character by filling out the info below.</p>
     </header>
 
     <form class="grid" id="survey-form">
@@ -29,12 +29,12 @@
 
           <div class="grid grid-col-auto-1fr">
             <label for="name" id="name-label">Name:</label>
-            <input id="name" placeholder="Enter your pet's name" required type="text">
+            <input id="name" placeholder="Write your character's name here" required type="text">
 
             <label for="number" id="number-label">Age:</label>
             <input id="number" max="9999" min="1" placeholder="Age" type="number">
 
-            <label for="date-of-birth" id="date-of-birth-label">Date of Birth:</label>
+            <label for="date-of-birth" id="date-of-birth-label">Date of Birth (alternative to age):</label>
             <input id="date-of-birth" placeholder="mm/dd/yyyy" type="date">
           </div>
         </fieldset>
