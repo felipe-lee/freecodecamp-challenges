@@ -164,38 +164,45 @@
           </div>
         </div>
 
-        <div class="grid" id="alignment">
-          <div id="alignment-good-evil">
+        <div id="alignment-radio" class="flex flex-wrap mb-6">
+          <h2 class="w-full text-3xl mb-6 px-3">Alignment</h2>
+          <div id="alignment-good-evil" class="w-full lg:w-1/2 mb-4">
             <fieldset>
-              <legend>Alignment - Good vs. Evil</legend>
+              <legend class="w-full text-xl mb-6 px-3">Good vs. Evil</legend>
 
-              <div class="grid alignment-choices">
-                <label for="alignment-good" id="alignment-good-label">
-                  <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">Good
+              <div>
+                <label for="alignment-good" id="alignment-good-label" class="px-3">
+                  <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">
+                  <span class="ml-1">Good</span>
                 </label>
-                <label for="alignment-neutral-ge" id="alignment-neutral-ge-label">
-                  <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">Neutral
+                <label for="alignment-neutral-ge" id="alignment-neutral-ge-label" class="px-3">
+                  <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">
+                  <span class="ml-1">Neutral</span>
                 </label>
-                <label for="alignment-evil" id="alignment-evil-label">
-                  <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">Evil
+                <label for="alignment-evil" id="alignment-evil-label" class="px-3">
+                  <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">
+                  <span class="ml-1">Evil</span>
                 </label>
               </div>
             </fieldset>
           </div>
 
-          <div id="alignment-law-chaos">
+          <div id="alignment-law-chaos" class="w-full lg:w-1/2">
             <fieldset>
-              <legend>Alignment - Law vs. Chaos</legend>
+              <legend class="w-full text-xl mb-6 px-3">Law vs. Chaos</legend>
 
-              <div class="grid alignment-choices">
-                <label for="alignment-law" id="alignment-law-label">
-                  <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">Law
+              <div>
+                <label for="alignment-law" id="alignment-law-label" class="px-3">
+                  <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">
+                  <span class="ml-1">Law</span>
                 </label>
-                <label for="alignment-neutral-lc" id="alignment-neutral-lc-label">
-                  <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">Neutral
+                <label for="alignment-neutral-lc" id="alignment-neutral-lc-label" class="px-3">
+                  <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">
+                  <span class="ml-1">Neutral</span>
                 </label>
-                <label for="alignment-chaos" id="alignment-chaos-label">
-                  <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">Chaos
+                <label for="alignment-chaos" id="alignment-chaos-label" class="px-3">
+                  <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">
+                  <span class="ml-1">Chaos</span>
                 </label>
               </div>
             </fieldset>
@@ -207,7 +214,7 @@
             <legend>Gender Identity</legend>
             <p>Which term best describes your character's gender?</p>
 
-            <div class="grid" id="gender-identity-options">
+            <div id="gender-identity-options">
               <label for="gender-fluid" id="gender-fluid-label">
                 <input id="gender-fluid" type="checkbox" value="fluid">Fluid
               </label>
@@ -257,12 +264,12 @@
           </fieldset>
         </div>
 
-        <div class="grid" id="bio-input">
+        <div id="bio-input">
           <label for="character-bio" id="character-bio-label">Character Bio:</label>
           <textarea id="character-bio"></textarea>
         </div>
 
-        <button id="submit" type="submit"><span class="button-text">Submit your character</span></button>
+        <button id="submit" type="submit">Submit your character</button>
       </form>
     </section>
 
