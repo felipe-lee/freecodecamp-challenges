@@ -81,14 +81,14 @@
               </div>
             </div>
             <p class="text-gray-600 text-xs italic">
-              Used for next few inputs, e.g. height.
+              Used for measurements, e.g. height.
             </p>
           </div>
 
           <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
             <label for="height" id="height-label"
                    class="block tracking-wide text-gray-700 font-bold mb-2">Height</label>
-            <input id="height" max="99999" min="1" placeholder="72" type="number"
+            <input id="height" max="99999" min="1" placeholder="54" type="number"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             <p class="text-gray-600 text-xs italic">
               cm/in
@@ -98,7 +98,7 @@
           <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
             <label for="weight" id="weight-label"
                    class="block tracking-wide text-gray-700 font-bold mb-2">Weight</label>
-            <input id="weight" max="99999" min="1" placeholder="kg/lb" type="number"
+            <input id="weight" max="99999" min="1" placeholder="150" type="number"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             <p class="text-gray-600 text-xs italic">
               kg/lb
@@ -107,7 +107,7 @@
 
           <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
             <label for="chest" id="chest-label" class="block tracking-wide text-gray-700 font-bold mb-2">Chest</label>
-            <input id="chest" max="9999" min="1" placeholder="cm/in" type="number"
+            <input id="chest" max="9999" min="1" placeholder="41" type="number"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             <p class="text-gray-600 text-xs italic">
               cm/in
@@ -116,7 +116,7 @@
 
           <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
             <label for="waist" id="waist-label" class="block tracking-wide text-gray-700 font-bold mb-2">Waist</label>
-            <input id="waist" max="9999" min="1" placeholder="cm/in" type="number"
+            <input id="waist" max="9999" min="1" placeholder="33" type="number"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             <p class="text-gray-600 text-xs italic">
               cm/in
@@ -125,7 +125,7 @@
 
           <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
             <label for="hips" id="hips-label" class="block tracking-wide text-gray-700 font-bold mb-2">Hips</label>
-            <input id="hips" max="9999" min="1" placeholder="cm/in" type="number"
+            <input id="hips" max="9999" min="1" placeholder="39" type="number"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             <p class="text-gray-600 text-xs italic">
               cm/in
@@ -135,24 +135,32 @@
           <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
             <label for="inseam" id="inseam-label"
                    class="block tracking-wide text-gray-700 font-bold mb-2">Inseam</label>
-            <input id="inseam" max="9999" min="1" placeholder="cm/in" type="number"
+            <input id="inseam" max="9999" min="1" placeholder="25" type="number"
                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             <p class="text-gray-600 text-xs italic">
               cm/in
             </p>
           </div>
 
-          <div>
-            <label for="hair-color" id="hair-color-label">Hair color</label>
-            <input id="hair-color" type="color">
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="hair-color" id="hair-color-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">Hair color</label>
+            <input id="hair-color" type="color"
+                   class="appearance-none h-12 py-1 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded px-2 focus:outline-none focus:bg-white focus:border-gray-500">
           </div>
-          <div>
-            <label for="eye-color" id="eye-color-label">Eye color</label>
-            <input id="eye-color" type="color">
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="eye-color" id="eye-color-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">Eye color</label>
+            <input id="eye-color" type="color"
+                   class="appearance-none h-12 py-1 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded px-2 focus:outline-none focus:bg-white focus:border-gray-500">
           </div>
-          <div>
-            <label for="skin-color" id="skin-color-label">Skin color</label>
-            <input id="skin-color" type="color">
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="skin-color" id="skin-color-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">Skin color</label>
+            <input id="skin-color" type="color"
+                   class="appearance-none h-12 py-1 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded px-2 focus:outline-none focus:bg-white focus:border-gray-500">
           </div>
         </div>
 
