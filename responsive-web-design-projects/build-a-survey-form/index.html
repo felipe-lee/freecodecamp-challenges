@@ -21,8 +21,15 @@
     <section class="mx-6 mt-12">
       <form id="survey-form" class="w-full">
         <div id="email-input" class="w-full mb-6 px-3">
-          <label for="email" id="email-label" class="block tracking-wide text-gray-700 font-bold mb-2">Email</label>
-          <input id="email" placeholder="my_name@gmail.com" required type="email"
+          <label for="email"
+                 id="email-label"
+                 class="block tracking-wide text-gray-700 font-bold mb-2">
+            Email
+          </label>
+          <input id="email"
+                 placeholder="my_name@gmail.com"
+                 required
+                 type="email"
                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
           <p class="text-gray-600 text-xs italic">
             This is for your profile.
@@ -164,7 +171,7 @@
           </div>
         </div>
 
-        <div id="alignment-radio" class="flex flex-wrap mb-6">
+        <div id="alignment" class="flex flex-wrap mb-6">
           <h2 class="w-full text-3xl mb-6 px-3">Alignment</h2>
           <div id="alignment-good-evil" class="w-full lg:w-1/2 mb-4">
             <fieldset>
@@ -209,64 +216,109 @@
           </div>
         </div>
 
-        <div id="gender-identity">
+        <div id="skills" class="flex flex-wrap mb-6">
+          <h2 class="w-full text-3xl mb-3 px-3">Skills</h2>
           <fieldset>
-            <legend>Gender Identity</legend>
-            <p>Which term best describes your character's gender?</p>
+            <legend class="text-2xl px-3">Specialized Skills</legend>
+            <p class="px-3 mb-3">Which skills would you be specialized in?</p>
 
-            <div id="gender-identity-options">
-              <label for="gender-fluid" id="gender-fluid-label">
-                <input id="gender-fluid" type="checkbox" value="fluid">Fluid
+            <div id="skill-options" class="flex flex-wrap">
+              <label for="skill-one-handed"
+                     id="skill-one-handed-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-one-handed" type="checkbox" value="one-handed">
+                <span class="ml-1">One-handed Weapon</span>
               </label>
 
-              <label for="gender-intersex" id="gender-intersex-label">
-                <input id="gender-intersex" type="checkbox" value="intersex">Intersex
+              <label for="skill-one-handed-and-shield"
+                     id="skill-one-handed-and-shield-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-one-handed-and-shield" type="checkbox" value="one-handed-and-shield">
+                <span class="ml-1">One-handed Weapon w/Shield</span>
               </label>
 
-              <label for="gender-non-binary" id="gender-non-binary-label">
-                <input id="gender-non-binary" type="checkbox" value="non-binary">Non-binary
+              <label for="skill-two-handed-weapons"
+                     id="skill-two-handed-weapons-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-two-handed-weapons" type="checkbox" value="two-handed-weapons">
+                <span class="ml-1">Two-handed Weapons</span>
               </label>
 
-              <label for="gender-transgender-man" id="gender-transgender-man-label">
-                <input id="gender-transgender-man" type="checkbox" value="transgender-man">Transgender man
+              <label for="skill-dual-wield"
+                     id="skill-dual-wield-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-dual-wield" type="checkbox" value="dual-wield">
+                <span class="ml-1">Dual Wield</span>
               </label>
 
-              <label for="gender-transgender-woman" id="gender-transgender-woman-label">
-                <input id="gender-transgender-woman" type="checkbox" value="transgender-woman">Transgender woman
+              <label for="skill-archery"
+                     id="skill-archery-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-archery" type="checkbox" value="archery">
+                <span class="ml-1">Archery</span>
               </label>
 
-              <label for="gender-cisgender-man" id="gender-cisgender-man-label">
-                <input id="gender-cisgender-man" type="checkbox" value="cisgender-man">Non-transgender man (cisgender)
+              <label for="skill-destruction-magic"
+                     id="skill-destruction-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-destruction-magic" type="checkbox" value="destruction-magic">
+                <span class="ml-1">Destruction Magic</span>
               </label>
 
-              <label for="gender-cisgender-woman" id="gender-cisgender-woman-label">
-                <input id="gender-cisgender-woman" type="checkbox" value="cisgender-woman">Non-transgender woman
-                (cisgender)
+              <label for="skill-conjuration-magic"
+                     id="skill-conjuration-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-conjuration-magic" type="checkbox" value="conjuration-magic">
+                <span class="ml-1">Conjuration Magic</span>
               </label>
 
-              <label for="gender-questioning" id="gender-questioning-label">
-                <input id="gender-questioning" type="checkbox" value="questioning">Questioning
+              <label for="skill-restoration-magic"
+                     id="skill-restoration-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-restoration-magic" type="checkbox" value="restoration-magic">
+                <span class="ml-1">Restoration Magic</span>
               </label>
 
-              <label for="gender-prefer-no-answer" id="gender-prefer-no-answer-label">
-                <input id="gender-prefer-no-answer" type="checkbox" value="prefer-no-answer">Prefer not to answer
+              <label for="skill-mysticism-magic"
+                     id="skill-mysticism-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-mysticism-magic" type="checkbox" value="mysticism-magic">
+                <span class="ml-1">Mysticism Magic</span>
               </label>
 
-              <label for="gender-another-gender" id="gender-another-gender-label">
-                <input id="gender-another-gender" type="checkbox" value="another-gender">Another gender (see next field)
+              <label for="skill-alteration-magic"
+                     id="skill-alteration-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-alteration-magic" type="checkbox" value="alteration-magic">
+                <span class="ml-1">Alteration Magic</span>
+              </label>
+
+              <label for="skill-other"
+                     id="skill-other-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-other" type="checkbox" value="other">
+                <span class="ml-1">Other (fill in below)</span>
               </label>
             </div>
 
-            <label for="gender-free-form-entry" id="gender-free-form-entry-label">Please write in your character's
-              gender
-              here (if not found above, and you want to select a gender):</label>
-            <input id="gender-free-form-entry" type="text">
+            <div id="skill-input" class="w-full md:max-w-lg mt-3 md:mt-6 px-3">
+              <label for="skill-free-form-entry"
+                     id="skill-free-form-entry-label"
+                     class="block tracking-wide text-gray-700 font-bold mb-2">
+                Please write in your character's special skill, if not available above
+              </label>
+              <input id="skill-free-form-entry"
+                     type="text"
+                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            </div>
           </fieldset>
         </div>
 
-        <div id="bio-input">
-          <label for="character-bio" id="character-bio-label">Character Bio:</label>
-          <textarea id="character-bio"></textarea>
+        <div id="bio-input" class="w-full">
+          <label for="character-bio" id="character-bio-label" class="block tracking-wide text-gray-700 font-bold mb-2">
+            Character Bio:
+          </label>
+          <textarea id="character-bio" class="resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
         </div>
 
         <button id="submit" type="submit">Submit your character</button>
