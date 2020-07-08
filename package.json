@@ -1,5 +1,18 @@
 {
-  "dependencies": {
-    "tailwind": "^4.0.0"
-  }
+  "name": "freecodecamp-challenges",
+  "version": "1.0.0",
+  "description": "Place to keep solutions to freecodecamp challenges",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "p-github:felipe-lee/freecodecamp-challenges.git"
+  },
+  "author": "Felipe Lee",
+  "license": "ISC"
 }

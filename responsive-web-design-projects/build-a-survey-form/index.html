@@ -3,200 +3,458 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  <meta content="Survey form page" name="Description"/>
+  <meta content="Character Survey Page" name="Description"/>
 
-  <title>Create a Character</title>
+  <title>Character Survey</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Arimo|Merriweather+Sans" rel="stylesheet">
-  <link href="./index.css" rel="stylesheet" type="text/css">
+  <link href="./output.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <main id="main">
-  <section>
+  <article>
     <header>
-      <h1 id="title">Create a Character!</h1>
-      <p id="description">Create a character by filling out the info below.</p>
+      <h1 id="title"
+          class="text-center text-6xl">
+        Character Survey
+      </h1>
+      <p id="description"
+         class="text-center">
+        Fill out the survey below, letting us know what kind of character you
+        would like to be in a fantasy world.
+      </p>
     </header>
 
-    <form class="grid" id="survey-form">
-      <div class="grid grid-col-auto-1fr" id="email-input">
-        <label for="email" id="email-label">Email (for profile):</label>
-        <input id="email" placeholder="Input your email here" required type="email">
-      </div>
+    <section class="m-6">
+      <form id="survey-form" class="w-full">
+        <div id="email-input" class="w-full mb-6 px-3">
+          <label for="email"
+                 id="email-label"
+                 class="block tracking-wide text-gray-700 font-bold mb-2">
+            Email
+          </label>
+          <input id="email"
+                 placeholder="my_name@gmail.com"
+                 required
+                 type="email"
+                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+          <p class="text-gray-600 text-xs italic">
+            This is for your profile.
+          </p>
+        </div>
 
-      <div id="bio-info">
-        <fieldset>
-          <legend>Character Biographical Information</legend>
-
-          <div class="grid grid-col-auto-1fr">
-            <label for="name" id="name-label">Name:</label>
-            <input id="name" placeholder="Write your character's name here" required type="text">
-
-            <label for="number" id="number-label">Age:</label>
-            <input id="number" max="9999" min="1" placeholder="Age" type="number">
-
-            <label for="date-of-birth" id="date-of-birth-label">Date of Birth (alternative to age):</label>
-            <input id="date-of-birth" placeholder="mm/dd/yyyy" type="date">
+        <div id="bio-info" class="flex flex-wrap mb-6">
+          <h2 class="w-full text-3xl mb-6 px-3">
+            Biographical Information
+          </h2>
+          <div class="w-full md:w-2/3 px-3 mb-6">
+            <label for="name"
+                   id="name-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Name
+            </label>
+            <input id="name"
+                   placeholder="Helmig Hammerarm"
+                   required
+                   type="text"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              Need some inspiration? Try out this
+              <a href="https://www.fantasynamegenerators.com/"
+                 target="_blank"
+                 rel="noreferrer noopener"
+                 id="name-generator-resource"
+                 class="hover:underline text-blue-600">
+                fantasy name generator.
+              </a>
+            </p>
           </div>
-        </fieldset>
-      </div>
 
-      <div id="body-chars">
-        <fieldset>
-          <legend>Body Characteristics</legend>
-
-          <div class="grid grid-col-auto-1fr">
-            <label for="dropdown" id="dropdown-label">Unit of Measurement:</label>
-            <select id="dropdown">
-              <option value="">Select a unit</option>
-              <option value="metric">Metric</option>
-              <option value="imperial">Imperial</option>
-            </select>
-
-            <label for="height" id="height-label">Height:</label>
-            <input id="height" max="99999" min="1" placeholder="cm/in" type="number">
-
-            <label for="weight" id="weight-label">Weight:</label>
-            <input id="weight" max="99999" min="1" placeholder="kg/lb" type="number">
-
-            <label for="chest" id="chest-label">Chest:</label>
-            <input id="chest" max="9999" min="1" placeholder="cm/in" type="number">
-
-            <label for="waist" id="waist-label">Waist:</label>
-            <input id="waist" max="9999" min="1" placeholder="cm/in" type="number">
-
-            <label for="hips" id="hips-label">Hips:</label>
-            <input id="hips" max="9999" min="1" placeholder="cm/in" type="number">
-
-            <label for="inseam" id="inseam-label">Inseam:</label>
-            <input id="inseam" max="9999" min="1" placeholder="cm/in" type="number">
-
-            <label for="hair-color" id="hair-color-label">Hair color:</label>
-            <input id="hair-color" type="color">
-
-            <label for="eye-color" id="eye-color-label">Eye color:</label>
-            <input id="eye-color" type="color">
-
-            <label for="skin-color" id="skin-color-label">Skin color:</label>
-            <input id="skin-color" type="color">
+          <div class="w-full md:w-1/3 px-3 mb-6">
+            <label for="number"
+                   id="number-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Age
+            </label>
+            <input id="number"
+                   max="9999"
+                   min="1"
+                   placeholder="150"
+                   type="number"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
           </div>
-        </fieldset>
-      </div>
 
-      <div class="grid" id="alignment">
-        <div id="alignment-good-evil">
+          <div class="w-full px-3">
+            <label for="hometown"
+                   id="hometown-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Hometown
+            </label>
+            <input id="hometown"
+                   placeholder="Bol Garohm"
+                   type="text"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              Where is your character from?
+            </p>
+          </div>
+        </div>
+
+        <div id="body-chars" class="flex flex-wrap mb-6">
+          <h2 class="w-full text-3xl mb-6 px-3">
+            Body Characteristics
+          </h2>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="dropdown"
+                   id="dropdown-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Unit of Measurement
+            </label>
+            <div class="relative">
+              <select id="dropdown"
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                <option value="">Select a unit</option>
+                <option value="metric">Metric</option>
+                <option value="imperial">Imperial</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-600 text-xs italic">
+              Used for measurements, e.g. height.
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="height"
+                   id="height-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Height
+            </label>
+            <input id="height"
+                   max="99999"
+                   min="1"
+                   placeholder="54"
+                   type="number"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              cm/in
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="weight"
+                   id="weight-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Weight
+            </label>
+            <input id="weight"
+                   max="99999"
+                   min="1"
+                   placeholder="150"
+                   type="number"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              kg/lb
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="chest"
+                   id="chest-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Chest
+            </label>
+            <input id="chest"
+                   max="9999"
+                   min="1"
+                   placeholder="41"
+                   type="number"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              cm/in
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="waist"
+                   id="waist-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Waist
+            </label>
+            <input id="waist"
+                   max="9999"
+                   min="1"
+                   placeholder="33"
+                   type="number"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              cm/in
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="hips"
+                   id="hips-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Hips
+            </label>
+            <input id="hips"
+                   max="9999"
+                   min="1"
+                   placeholder="39"
+                   type="number"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              cm/in
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="inseam"
+                   id="inseam-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Inseam
+            </label>
+            <input id="inseam"
+                   max="9999"
+                   min="1"
+                   placeholder="25"
+                   type="number"
+                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <p class="text-gray-600 text-xs italic">
+              cm/in
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="hair-color"
+                   id="hair-color-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Hair color
+            </label>
+            <input id="hair-color"
+                   type="color"
+                   class="appearance-none h-12 py-1 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded px-2 focus:outline-none focus:bg-white focus:border-gray-500">
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="eye-color"
+                   id="eye-color-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Eye color
+            </label>
+            <input id="eye-color"
+                   type="color"
+                   class="appearance-none h-12 py-1 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded px-2 focus:outline-none focus:bg-white focus:border-gray-500">
+          </div>
+
+          <div class="w-full md:w-1/3 lg:w-1/4 px-3 mb-4">
+            <label for="skin-color"
+                   id="skin-color-label"
+                   class="block tracking-wide text-gray-700 font-bold mb-2">
+              Skin color
+            </label>
+            <input id="skin-color"
+                   type="color"
+                   class="appearance-none h-12 py-1 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded px-2 focus:outline-none focus:bg-white focus:border-gray-500">
+          </div>
+        </div>
+
+        <div id="alignment" class="flex flex-wrap mb-6">
+          <h2 class="w-full text-3xl mb-6 px-3">Alignment</h2>
+          <div id="alignment-good-evil" class="w-full lg:w-1/2 mb-4">
+            <fieldset>
+              <legend class="w-full text-xl mb-6 px-3">Good vs. Evil</legend>
+
+              <div>
+                <label for="alignment-good" id="alignment-good-label" class="px-3">
+                  <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">
+                  <span class="ml-1">Good</span>
+                </label>
+                <label for="alignment-neutral-ge" id="alignment-neutral-ge-label" class="px-3">
+                  <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">
+                  <span class="ml-1">Neutral</span>
+                </label>
+                <label for="alignment-evil" id="alignment-evil-label" class="px-3">
+                  <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">
+                  <span class="ml-1">Evil</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div id="alignment-law-chaos" class="w-full lg:w-1/2">
+            <fieldset>
+              <legend class="w-full text-xl mb-6 px-3">Law vs. Chaos</legend>
+
+              <div>
+                <label for="alignment-law" id="alignment-law-label" class="px-3">
+                  <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">
+                  <span class="ml-1">Law</span>
+                </label>
+                <label for="alignment-neutral-lc" id="alignment-neutral-lc-label" class="px-3">
+                  <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">
+                  <span class="ml-1">Neutral</span>
+                </label>
+                <label for="alignment-chaos" id="alignment-chaos-label" class="px-3">
+                  <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">
+                  <span class="ml-1">Chaos</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div id="skills" class="flex flex-wrap mb-6">
+          <h2 class="w-full text-3xl mb-3 px-3">Skills</h2>
           <fieldset>
-            <legend>Alignment - Good vs. Evil</legend>
+            <legend class="text-2xl px-3">Specialized Skills</legend>
+            <p class="px-3 mb-3">Which skills would you be specialized in?</p>
 
-            <div class="grid alignment-choices">
-              <label for="alignment-good" id="alignment-good-label">
-                <input id="alignment-good" name="alignment-good-evil" type="radio" value="good">Good
+            <div id="skill-options" class="flex flex-wrap">
+              <label for="skill-one-handed"
+                     id="skill-one-handed-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-one-handed" type="checkbox" value="one-handed">
+                <span class="ml-1">One-handed Weapon</span>
               </label>
-              <label for="alignment-neutral-ge" id="alignment-neutral-ge-label">
-                <input id="alignment-neutral-ge" name="alignment-good-evil" type="radio" value="neutral">Neutral
+
+              <label for="skill-one-handed-and-shield"
+                     id="skill-one-handed-and-shield-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-one-handed-and-shield" type="checkbox" value="one-handed-and-shield">
+                <span class="ml-1">One-handed Weapon w/Shield</span>
               </label>
-              <label for="alignment-evil" id="alignment-evil-label">
-                <input id="alignment-evil" name="alignment-good-evil" type="radio" value="evil">Evil
+
+              <label for="skill-two-handed-weapons"
+                     id="skill-two-handed-weapons-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-two-handed-weapons" type="checkbox" value="two-handed-weapons">
+                <span class="ml-1">Two-handed Weapons</span>
               </label>
+
+              <label for="skill-dual-wield"
+                     id="skill-dual-wield-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-dual-wield" type="checkbox" value="dual-wield">
+                <span class="ml-1">Dual Wield</span>
+              </label>
+
+              <label for="skill-archery"
+                     id="skill-archery-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-archery" type="checkbox" value="archery">
+                <span class="ml-1">Archery</span>
+              </label>
+
+              <label for="skill-destruction-magic"
+                     id="skill-destruction-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-destruction-magic" type="checkbox" value="destruction-magic">
+                <span class="ml-1">Destruction Magic</span>
+              </label>
+
+              <label for="skill-conjuration-magic"
+                     id="skill-conjuration-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-conjuration-magic" type="checkbox" value="conjuration-magic">
+                <span class="ml-1">Conjuration Magic</span>
+              </label>
+
+              <label for="skill-restoration-magic"
+                     id="skill-restoration-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-restoration-magic" type="checkbox" value="restoration-magic">
+                <span class="ml-1">Restoration Magic</span>
+              </label>
+
+              <label for="skill-mysticism-magic"
+                     id="skill-mysticism-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-mysticism-magic" type="checkbox" value="mysticism-magic">
+                <span class="ml-1">Mysticism Magic</span>
+              </label>
+
+              <label for="skill-alteration-magic"
+                     id="skill-alteration-magic-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-alteration-magic" type="checkbox" value="alteration-magic">
+                <span class="ml-1">Alteration Magic</span>
+              </label>
+
+              <label for="skill-other"
+                     id="skill-other-label"
+                     class="px-3 w-full sm:w-1/2 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                <input id="skill-other" type="checkbox" value="other">
+                <span class="ml-1">Other (fill in below)</span>
+              </label>
+            </div>
+
+            <div id="skill-input" class="w-full md:max-w-lg mt-3 md:mt-6 px-3">
+              <label for="skill-free-form-entry"
+                     id="skill-free-form-entry-label"
+                     class="block tracking-wide text-gray-700 font-bold mb-2">
+                Please write in your character's special skill, if not available above
+              </label>
+              <input id="skill-free-form-entry"
+                     type="text"
+                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </div>
           </fieldset>
         </div>
 
-        <div id="alignment-law-chaos">
-          <fieldset>
-            <legend>Alignment - Law vs. Chaos</legend>
+        <div id="bio-input" class="w-full mb-6 px-3">
+          <h2 class="w-full text-3xl mb-3">Biography</h2>
 
-            <div class="grid alignment-choices">
-              <label for="alignment-law" id="alignment-law-label">
-                <input id="alignment-law" name="alignment-law-chaos" type="radio" value="law">Law
-              </label>
-              <label for="alignment-neutral-lc" id="alignment-neutral-lc-label">
-                <input id="alignment-neutral-lc" name="alignment-law-chaos" type="radio" value="neutral">Neutral
-              </label>
-              <label for="alignment-chaos" id="alignment-chaos-label">
-                <input id="alignment-chaos" name="alignment-law-chaos" type="radio" value="chaos">Chaos
-              </label>
-            </div>
-          </fieldset>
+          <label for="character-bio"
+                 id="character-bio-label"
+                 class="block tracking-wide text-gray-700 font-bold mb-2">
+            Detailed Bio
+          </label>
+          <textarea id="character-bio"
+                    class="resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
         </div>
+
+        <button id="submit"
+                type="submit"
+                class="bg-gray-700 hover:bg-gray-500 text-white font-bold ml-3 py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Submit your character
+        </button>
+      </form>
+    </section>
+
+    <footer class="mx-6 px-3 mb-6">
+      <h2 class="w-full text-3xl mb-3">Resources</h2>
+      <div class="text-secondary">
+        <p>
+          If you need help deciding what to choose, you can use the resources below to help you out:
+        </p>
+
+        <ul class="list-inside list-disc">
+          <li>
+            <a href="http://www.easydamus.com/alignment.html"
+               id="alignment-resource"
+               rel="noreferrer noopener"
+               target="_blank">
+              Alignment Information
+            </a>
+          </li>
+          <li>
+            <a href="http://bodyvisualizer.com/"
+               id="body-resource"
+               rel="noreferrer noopener"
+               target="_blank">
+              Body Visualizer
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <div id="gender-identity">
-        <fieldset>
-          <legend>Gender Identity</legend>
-          <p>Which term best describes your character's gender?</p>
-
-          <div class="grid" id="gender-identity-options">
-            <label for="gender-fluid" id="gender-fluid-label">
-              <input id="gender-fluid" type="checkbox" value="fluid">Fluid
-            </label>
-
-            <label for="gender-intersex" id="gender-intersex-label">
-              <input id="gender-intersex" type="checkbox" value="intersex">Intersex
-            </label>
-
-            <label for="gender-non-binary" id="gender-non-binary-label">
-              <input id="gender-non-binary" type="checkbox" value="non-binary">Non-binary
-            </label>
-
-            <label for="gender-transgender-man" id="gender-transgender-man-label">
-              <input id="gender-transgender-man" type="checkbox" value="transgender-man">Transgender man
-            </label>
-
-            <label for="gender-transgender-woman" id="gender-transgender-woman-label">
-              <input id="gender-transgender-woman" type="checkbox" value="transgender-woman">Transgender woman
-            </label>
-
-            <label for="gender-cisgender-man" id="gender-cisgender-man-label">
-              <input id="gender-cisgender-man" type="checkbox" value="cisgender-man">Non-transgender man (cisgender)
-            </label>
-
-            <label for="gender-cisgender-woman" id="gender-cisgender-woman-label">
-              <input id="gender-cisgender-woman" type="checkbox" value="cisgender-woman">Non-transgender woman
-              (cisgender)
-            </label>
-
-            <label for="gender-questioning" id="gender-questioning-label">
-              <input id="gender-questioning" type="checkbox" value="questioning">Questioning
-            </label>
-
-            <label for="gender-prefer-no-answer" id="gender-prefer-no-answer-label">
-              <input id="gender-prefer-no-answer" type="checkbox" value="prefer-no-answer">Prefer not to answer
-            </label>
-
-            <label for="gender-another-gender" id="gender-another-gender-label">
-              <input id="gender-another-gender" type="checkbox" value="another-gender">Another gender (see next field)
-            </label>
-          </div>
-
-          <label for="gender-free-form-entry" id="gender-free-form-entry-label">Please write in your character's gender
-            here (if not found above, and you want to select a gender):</label>
-          <input id="gender-free-form-entry" type="text">
-        </fieldset>
-      </div>
-
-      <div class="grid" id="bio-input">
-        <label for="character-bio" id="character-bio-label">Character Bio:</label>
-        <textarea id="character-bio"></textarea>
-      </div>
-
-      <button id="submit" type="submit"><span class="button-text">Create your character!</span></button>
-    </form>
-
-    <footer>
-      <h2>Resources</h2>
-
-      <p>
-        If you need help deciding what to choose, you can use the resources below to help you out:
-      </p>
-      <ul>
-        <li><a href="http://www.easydamus.com/alignment.html" id="alignment-resource" rel="noreferrer noopener"
-               target="_blank">Alignment Information</a></li>
-        <li><a href="http://bodyvisualizer.com/" id="body-resource" rel="noreferrer noopener"
-               target="_blank">Body Visualizer</a></li>
-      </ul>
     </footer>
-  </section>
+  </article>
 </main>
-<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
