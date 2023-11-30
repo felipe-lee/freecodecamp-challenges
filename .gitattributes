@@ -108,12 +108,13 @@ makefile           text
 
 ## BINARY FILES
 *.7z  binary
-*.db	binary
+*.db  binary
 *.gz  binary
-*.p 	binary
+*.hex binary
+*.p   binary
 *.pkl binary
 *.pyc binary
-*.pyd	binary
+*.pyd binary
 *.pyo binary
 *.ttf binary
 *.zip binary
